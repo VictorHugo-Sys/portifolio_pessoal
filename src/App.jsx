@@ -1,18 +1,9 @@
 import React from 'react';
+import Conhecimentos from './conhecimentos.jsx';
+import Principal from './principal.jsx';
+import Contato from './contato.jsx';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { TypeAnimation } from 'react-type-animation';
-import perfil from '../imgs/perfilofc.png';
-import react from '../imgs/svgs/react.svg';
-import js from '../imgs/svgs/js.svg';
-import css from '../imgs/svgs/css.svg';
-import router from '../imgs/svgs/router.svg';
-import tailwind from '../imgs/svgs/tailwind.svg';
-import word from '../imgs/svgs/word.svg';
-import sass from '../imgs/svgs/sass.svg';
-import typescript from '../imgs/svgs/typescript.svg';
-import figma from '../imgs/svgs/figma.svg';
-import python from '../imgs/svgs/python.svg';
 
 const App = () => {
   const controls = useAnimation();
@@ -25,7 +16,7 @@ const App = () => {
   }, [controls, inView]);
 
   const controls1 = useAnimation();
-  const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.5 });
+  const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   React.useEffect(() => {
     if (inView1) {
@@ -44,6 +35,7 @@ const App = () => {
 
   return (
     <main>
+      <div className="h-1 w-4/5 bg-gradient-to-r from-fuchsia-500 to-cyan-500 mx-auto mt-10 mb-5 max-w-[800px]"></div>
       <motion.div
         ref={ref}
         initial="hidden"
@@ -58,59 +50,7 @@ const App = () => {
         }}
         className=""
       >
-        <div className="grid grid-cols-2 max-w-5xl mx-auto px-5">
-          <div className="h-1 w-4/5 bg-gradient-to-r from-fuchsia-500 to-cyan-500 col-span-2 mx-auto mt-10"></div>
-          <div className="flex justify-center items-center min-h-[calc(100vh-200px)]">
-            <TypeAnimation
-              sequence={[
-                '...',
-                700,
-                'MEU NOME É VICTOR HUGO\nSOU DESENVOLVEDOR FRONT-END',
-                800,
-                'ATUALMENTE CURSANDO ADS NO TERCEIRO SEMESTRE..',
-                800,
-                'TENHO EXPERIENCIA COM REACT, TAILWIND, JS E GIT',
-                800,
-                'BUSCANDO SEMPRE APREENDER MAIS\nE MELHORAR MINHAS SKILLS\nCOMO DESENVOLVEDOR',
-                800,
-              ]}
-              wrapper="pre"
-              cursor={true}
-              repeat={Infinity}
-              style={{ whiteSpace: 'pre-line' }}
-              className="font-bold text-4xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent inline-block font-mono select-none min-h-[300px]"
-            />
-          </div>
-          <div className="flex justify-end items-center select-none min-h-[calc(100vh-200px)]">
-            <img
-              src={perfil}
-              alt="imagem de perfil"
-              className="hover:scale-105 transition"
-            />
-          </div>
-        </div>
-        <div className="col-span-2 max-w-5xl mx-auto px-5">
-          <div className="col-span-2">
-            <h1
-              className="relative font-bold text-5xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent capitalize
-              before:absolute before:bg-fuchsia-500 before:w-14 before:h-1 before:-left-6 before:top-1 before:-rotate-45 inline-block"
-            >
-              sobre mim
-            </h1>
-            <p className="font-mono text-xl text-white my-14 capitalize">
-              Atualmente me dedico ao estudo de desenvolvimento front-end, com
-              foco em React, JavaScript, Tailwind CSS e bibliotecas modernas de
-              animação no ecossistema React. Estou em busca de uma oportunidade
-              de estágio, onde eu possa aplicar na prática o que venho
-              aprendendo e crescer junto com profissionais experientes. Tenho
-              grande interesse em tecnologia e estou sempre em busca de evolução
-              constante por meio da prática e do contato com novos desafios. Em
-              breve, espero integrar uma equipe onde eu possa colaborar
-              ativamente e também aprender com quem já vive o dia a dia da área
-              que tanto admiro.
-            </p>
-          </div>
-        </div>
+        <Principal />
       </motion.div>
       <motion.div
         ref={ref1}
@@ -126,58 +66,25 @@ const App = () => {
         }}
         className=""
       >
-        <div className="grid grid-cols-3 max-w-5xl my-40 mx-auto px-5 gap-8">
-          <h1
-            className="relative col-span-3 font-bold text-5xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent capitalize
-                before:absolute before:bg-fuchsia-500 before:w-14 before:h-1 before:-left-6 before:top-1 before:-rotate-45 inline-block"
-          >
-            conhecimento |{' '}
-            <span className="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent inline-block">
-              estudando
-            </span>
-          </h1>
-          <div className="flex gap-4 border-4 border-violet-500 bg-violet-950 p-5 rounded-md text-2xl text-white hover:scale-105 items-center transition text-center justify-between">
-            <p>react</p>
-            <img src={react} className="w-10 h-10 object-contain" />
-          </div>
-          <div className="flex gap-4 border-4 border-violet-500 bg-violet-950 p-5 rounded-md text-2xl text-white hover:scale-105 items-center transition justify-between">
-            <p>js</p>
-            <img src={js} className="w-10 h-10 object-contain" />
-          </div>
-          <div className="flex gap-4 border-4 border-violet-500 bg-violet-950 p-5 rounded-md text-2xl text-white hover:scale-105 items-center transition justify-between">
-            <p>css</p>
-            <img src={css} className="w-10 h-10 object-contain"/>
-          </div>
-          <div className="flex gap-4 border-4 border-violet-500 bg-violet-950 p-5 rounded-md text-2xl text-white hover:scale-105 items-center transition justify-between">
-            <p>router</p>
-            <img src={router} className="w-10 h-10 object-contain" />
-          </div>
-          <div className="flex gap-4 border-4 border-violet-500 bg-violet-950 p-5 rounded-md text-2xl text-white hover:scale-105 items-center transition justify-between">
-            <p>tailwind</p>
-            <img src={tailwind} className="w-10 h-10 object-contain" />
-          </div>
-          <div className="flex gap-4 border-4 border-amber-400 bg-violet-950 p-5 rounded-md text-2xl text-white hover:scale-105 items-center transition justify-between">
-            <p>REST API</p>
-            <img src={word} className="w-10 h-10 object-contain"/>
-          </div>
-          <div className="flex gap-4 border-4 border-amber-400 bg-violet-950 p-5 rounded-md text-2xl text-white hover:scale-105 items-center transition justify-between">
-            <p>sass</p>
-            <img src={sass} className="w-10 h-10 object-contain" />
-          </div>
-          <div className="flex gap-4 border-4 border-amber-400 bg-violet-950 p-5 rounded-md text-2xl text-white hover:scale-105 items-center transition justify-between">
-            <p>typescript</p>
-            <img src={typescript} className="w-10 h-10 object-contain"/>
-          </div>
-          <div className="flex gap-4 border-4 border-amber-400 bg-violet-950 p-5 rounded-md text-2xl text-white hover:scale-105 items-center transition justify-between">
-            <p>UI/UX</p>
-            <img src={figma} className="w-10 h-10 object-contain"/>
-          </div>
-          <div className="flex gap-4 border-4 border-amber-400 bg-violet-950 p-5 rounded-md text-2xl text-white hover:scale-105 items-center transition justify-between">
-            <p>python</p>
-            <img src={python} className="w-10 h-10 object-contain"/>
-          </div>
-        </div>
+        <Conhecimentos />
       </motion.div>
+      <motion.div
+        ref={ref2}
+        initial="hidden"
+        animate={controls2}
+        variants={{
+          hidden: { opacity: 0, x: -200 },
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: { duration: 0.8, ease: 'easeOut' },
+          },
+        }}
+        className=""
+      >
+        <Contato/>
+      </motion.div>
+      <div className="h-1 w-4/5 bg-gradient-to-r from-fuchsia-500 to-cyan-500 mx-auto mb-10 max-w-[800px]"></div>
     </main>
   );
 };
