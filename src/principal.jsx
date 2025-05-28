@@ -27,11 +27,11 @@ const Principal = () => {
             className="font-bold text-4xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent inline-block font-mono select-none text-center max-md:text-2xl"
           />
         </div>
-        <div className="flex justify-end items-center select-none max-md:justify-center max-md:items-center-center">
+        <div className="flex justify-end items-center select-none max-md:justify-center">
           <img
             src={perfil}
             alt="imagem de perfil"
-            className="hover:scale-105 transition max-w-[400px]  max-md:max-w-[320px]"
+            className="hover:scale-105 transition max-w-[400px]  max-md:max-w-[300px]"
           />
         </div>
       </div>
