@@ -5,8 +5,8 @@ import perfil from '../imgs/perfilofc.png';
 const Principal = () => {
   return (
     <>
-      <div className="grid grid-cols-2 max-w-5xl mx-auto px-8 gap-4 max-md:flex max-md:flex-col max-md:items-center">
-        <div className="flex justify-center items-center min-h-[calc(100vh-200px)] max-md:min-h-[200px] max-md:justify-center max-md:items-center">
+      <div className="grid grid-cols-2 max-w-5xl mx-auto px-10 gap-4 max-md:flex max-md:flex-col max-md:items-center">
+        <div className="flex justify-center items-center min-h-[calc(100vh-200px)] max-md:min-h-[250px] max-md:justify-center max-md:items-center">
           <TypeAnimation
             sequence={[
               '...',
@@ -24,22 +24,22 @@ const Principal = () => {
             cursor={true}
             repeat={Infinity}
             style={{ whiteSpace: 'pre-line' }}
-            className="font-bold text-4xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent inline-block font-mono select-none text-center"
+            className="font-bold text-4xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent inline-block font-mono select-none text-center max-md:text-2xl"
           />
         </div>
-        <div className="flex justify-end items-center select-none max-md:justify-center">
+        <div className="flex justify-end items-center select-none max-md:justify-center max-md:items-center-center">
           <img
             src={perfil}
             alt="imagem de perfil"
-            className="hover:scale-105 transition max-w-[400px]"
+            className="hover:scale-105 transition max-w-[400px]  max-md:max-w-[320px]"
           />
         </div>
       </div>
-      <div className="col-span-2 max-w-5xl mx-auto mb-32 px-8">
+      <div className="col-span-2 max-w-5xl mx-auto mb-32 px-10">
         <div className="col-span-2">
           <h1
             className="relative font-bold font-sans text-5xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent capitalize
-              before:absolute before:bg-fuchsia-500 before:w-14 before:h-1 before:-left-6 before:top-1 before:-rotate-45 inline-block"
+              before:absolute before:bg-fuchsia-500 before:w-14 before:h-1 before:-left-6 before:top-1 before:-rotate-45 inline-block max-md:text-3xl"
           >
             sobre mim
           </h1>

@@ -8,7 +8,7 @@ const Contato = () => {
     <div className="col-span-2 max-w-5xl mx-auto px-8 font-sans">
       <h1
         className="relative font-bold text-5xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent capitalize
-              before:absolute before:bg-fuchsia-500 before:w-14 before:h-1 before:-left-6 before:top-1 before:-rotate-45 inline-block mb-10"
+              before:absolute before:bg-fuchsia-500 before:w-14 before:h-1 before:-left-6 before:top-1 before:-rotate-45 inline-block mb-10 max-md:text-3xl"
       >
         contato
       </h1>

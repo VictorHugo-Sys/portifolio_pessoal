@@ -16,7 +16,7 @@ const Conhecimentos = () => {
     <div className="grid grid-cols-3 max-w-5xl mb-32 mx-auto px-8 gap-8 font-sans max-md:grid-cols-2">
       <h1
         className="relative col-span-3 font-bold text-5xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent capitalize
-                before:absolute before:bg-fuchsia-500 before:w-14 before:h-1 before:-left-6 before:top-1 before:-rotate-45 inline-block max-md:col-span-2"
+                before:absolute before:bg-fuchsia-500 before:w-14 before:h-1 before:-left-6 before:top-1 before:-rotate-45 inline-block max-md:col-span-2 max-md:text-3xl"
       >
         conhecimento |{' '}
         <span className="bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent inline-block">
