@@ -1,3 +1,21 @@
-Este é o meu primeiro projeto de portfólio desenvolvido utilizando React, Tailwind CSS e Framer Motion. A ideia foi criar uma interface moderna, responsiva e com animações suaves para apresentar meus projetos e habilidades como desenvolvedor. Além de praticar o que venho estudando, este portfólio marca o início da minha jornada pública como desenvolvedor front-end. <br>
+# Portfólio Básico (Projeto de Teste) 🚀
+Este é um portfólio simples que desenvolvi como teste e experimentação de algumas bibliotecas em React, como:
 
-[![Website](https://img.shields.io/badge/Meu_Site-1E90FF?style=flat-square&logo=google-chrome&logoColor=white)](https://victorhugo-sys.github.io/portifolio_pessoal/)
+* Framer Motion (animações e transições)
+* Type Animation (efeito de digitação animada)
+
+# Objetivo
+O principal objetivo foi explorar essas ferramentas para ganhar prática e criar uma base para projetos futuros.
+
+# Próximos passos
+Esse projeto não é o portfólio definitivo. Em breve, publicarei uma versão oficial, com um design mais elaborado e mais informações sobre meus trabalhos. <br>
+
+<div align="center">
+
+<h3>🚀 Projeto no ar</h3>
+
+<a href="https://victorhugo-sys.github.io/portifolio_pessoal/">
+  <img src="https://img.shields.io/badge/Acessar_Site-9831f7?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Acessar Site">
+</a>
+
+</div>
