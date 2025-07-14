@@ -14,7 +14,7 @@ Esse projeto não é o portfólio definitivo. Em breve, publicarei uma versão o
 
 <h3>🚀 Projeto no ar</h3>
 
-<a href="https://victorhugo-sys.github.io/portifolio_pessoal/">
+<a href="https://victorhugo-sys.github.io/portifolio_pessoal_vs1/">
   <img src="https://img.shields.io/badge/Acessar_Site-9831f7?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Acessar Site">
 </a>
 
